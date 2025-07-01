@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Assignment 5</title>
+</head>
+<body style="background-color:powderblue;">
+                                                   <h1 style="text-align:center;color:yellow;font-family:verdana;font-size:350%;">Welcome Dear Customer</h1>
+<script>
+
+
+let balance = 10000
+alert("Your Balance = \n " + balance) 
+
+let restaurant = prompt("What Would You Like To Eat \n 1 : Fast Food \n 2 : Desi Food \n 3 : Chinese Food \n 4 : Desert")
+
+
+
+if (restaurant <= "0" || restaurant >= "5"
+){alert("That Is Not On The Menu")}
+else if (restaurant ==  1 ){let fast = prompt(" 1 : Burger \n  2 : Pizza \n 3 : Fries") ;
+if(fast <= 0 || fast >= 4){alert("That Is Not On The Menu")}
+if(fast == 1 ){let bur = prompt(" 1 : Crispy Burger \n 2 : Zinger Burger");
+if (bur <= "0" || bur >= "3")alert("That Is Not On The Menu") 
+if (bur == 1){alert("That Will Be 345");console.log(balance-345)
+}if(bur == 2 ){alert("That Will Be 525");console.log(balance-525)}};
+
+if (fast == 2 ){let size =prompt(" 1 : Large \n 2 : Medium");
+if( size <= "0" || size >= "3"){alert("That Is Not On The Menu")};
+    let flav = prompt(" 1 : Plain Cheese \n 2 : Dancing Fajita ( +55 RS )")
+   if ( flav <= "0" || flav >= "3"){alert("That Is Not On The Menu")};
+    if
+(size == 1 && flav == 1){alert("That Will Be 1545");console.log(balance-1545)};if
+(size == 2 && flav == 1){alert("That Will Be 650");console.log(balance-650)};if
+(size == 2 && flav == 2){alert("That Will Be 705");console.log(balance-705)};if
+(size == 1 && flav == 2){alert("That Will Be 1600");console.log(balance-1600)};
+}
+else if (fast == 3 ){let siz=prompt("1 : Large \n 2 : Medium");
+ if( siz <= "0" || siz >= "3"){alert("That Is Not On The Menu")};
+if(siz == 1){alert("That Will Be 100");console.log(balance-100)}
+if(siz == 2){alert("That Will Be 50");console.log(balance-50)}
+}}else if(restaurant == 2){let desi = prompt(" 1 : Biryani \n 2 : Karahi"); 
+if (desi <= 0 || desi >= 3){alert("That Is Not On The Menu")}
+if (desi == 1){let bir = prompt(" 1 : Chicken Biryani \n 2 : Beef Biryani");
+if (bir <= 0 || bir >= 3){alert("That Is Not On The Menu")};
+if (bir == 1){alert("That Will Be 250");console.log(balance-250);
+};if (bir == 2){alert("That Will Be 300");console.log(balance-300);
+}}if (desi == 2){let kar = prompt(" 1 : Chicken Karahi (Half Kg) \n 2 : Mutton Karahi (Half Kg)");
+if(kar <= 0 || kar >=3){alert("That Is Not On The Menu")};
+if (kar == 1){alert("That Will Be 750");console.log(balance-750);};
+if(kar == 2){alert("That Will Be 800");console.log(balance-800);
+}}}else if (restaurant == 3){let china = prompt(" 1 : Chowmein \n 2 : Fried Rice ( Half Kg )");
+if (china <= 0 || china >= 3){alert("That Is Not On The Menu")};
+if (china == 1 ){alert("That Will Be 500");console.log(balance-500)};
+if (china == 2){alert("That Will Be 750");console.log(balance-750)}}
+else if(restaurant == 4){let des =prompt(" 1 : Ice Cream \n 2 : Cake");
+if(des <= 0 || des >= 3){alert("That Is Not On The Menu")};
+if (des == 1){let ice =prompt(" 1 : Single Scoop \n 2 : Double Scoop ");
+if (ice <= 0 || ice >= 3){alert("That Is Not On The Menu")};
+if(ice == 1 || ice == 2){alert ("Choose Your Flavor");let fl =prompt(" 1 : Vanilla \n 2 : Chocolate")};    
+if (ice == 1){alert ("That Will Be 120");console.log(balance-120)};
+if (ice == 2 ){alert("That Will Be 240");console.log(balance-240)};};
+if(des == 2){let ca =prompt("Flavors \n 1 : Chocolate \n 2 : Red Velvet")
+if (ca <= 0 || ca >= 3){alert("That Is Not On The Menu")}
+if (ca = 1){alert ("That Will Be 1200");console.log(balance-1200)}
+else {alert ("That Will Be 1200");console.log(balance-1200)}}}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
